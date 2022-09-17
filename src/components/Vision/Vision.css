@@ -1,0 +1,123 @@
+.vision {
+  background-color: var(--secondary);
+  overflow-x: hidden;
+  background-image: url("../../assets/images/vision\ back.png");
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.vision .vision-content {
+  padding: 190px 0;
+}
+.vision .vision-content .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  position: relative;
+  top: -10%;
+}
+
+.vision .vision-content .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vision-img {
+  /* background: url("../../assets/gif/vissiongif.gif"); */
+  /* background-repeat: no-repeat; */
+  mix-blend-mode: darken;
+  /* background-position: 45% 70%; */
+  /* background-size: 18rem; */
+  /* margin-top: 2rem; */
+  position: relative;
+  overflow: hidden;
+}
+
+.headset {
+  animation: myAnim 5s linear 0s infinite alternate forwards;
+  /* height: 190px; */
+  margin-top: 5rem;
+  height: 23rem;
+}
+.soundgif {
+  mix-blend-mode: darken;
+  position: absolute;
+  top: 45%;
+  height: 35%;
+  left: 10%;
+  border-radius: 100%;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .vision-img {
+    margin-bottom: 0rem;
+  }
+  .headset {
+    animation: myAnim 5s linear 0s infinite alternate forwards;
+    height: 39rem;
+  }
+  .vision .detail {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--primary);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .vision .vision-content {
+    padding: 65px 0 190px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .vision {
+    background-color: var(--secondary);
+    overflow-x: hidden;
+    background-image: url("../../assets/images/vision\ back.png");
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-repeat: no-repeat;
+    min-height: 620px;
+    background-size: auto;
+  }
+  .vision .vision-content {
+    padding: 0px 0;
+  }
+  .headset {
+    animation: myAnim 5s linear 0s infinite alternate forwards;
+    margin-top: 5rem;
+    height: 10rem;
+  }
+
+  .vision .vision-content .right {
+    order: 0;
+  }
+  .vision .vision-content .left {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .vision .soundgif {
+    top: 45%;
+    height: 35%;
+    left: 0% !important;
+  }
+}

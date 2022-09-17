@@ -1,0 +1,126 @@
+.navbBar {
+  position: relative;
+  z-index: 999999;
+}
+.navbar-toggler {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  position: relative;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+  position: absolute;
+  top: 0px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  position: absolute;
+  top: 20px;
+  transform: rotate(0deg);
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+  top: inherit;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  top: inherit;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  top: inherit;
+  transform: rotate(-135deg);
+}
+
+/* Color of 3 lines */
+
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: white;
+}
+
+/* .navbar-nav .nav-item .nav-link:hover { */
+/* background: linear-gradient(
+    270deg,
+    #95c11f 2.29%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-radius: 0px 25.5px 25.5px 0px; */
+/* border-width: 2px;
+  border-bottom-style: solid;
+  border-image: linear-gradient(90deg, #dfc500 -6.12%, rgba(223, 197, 0, 0)) 1; */
+/* } */
+
+.navbar-nav li a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.navbBar .navbar-nav li {
+  padding-right: 2rem !important;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-nav .nav-item .nav-link:hover {
+    border: none;
+  }
+
+  .navbar-nav {
+    background-color: black;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 15px;
+  }
+}

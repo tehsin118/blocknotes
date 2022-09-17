@@ -1,0 +1,93 @@
+.studio {
+  background: var(--hell);
+  padding: 90px 0;
+  overflow-x: hidden;
+}
+.studio .studio-content .left {
+  position: relative;
+}
+.studio-gif {
+  position: absolute;
+  top: 5%;
+  left: -5%;
+  height: 90%;
+  border-radius: 50%;
+  mix-blend-mode: revert;
+}
+.mobile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.studio .studio-content .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .studio .studio-content .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mobile {
+    display: flex;
+    justify-content: center;
+  }
+  .studio .studio-content {
+    padding-top: 1rem;
+  }
+  .studio .studio-content .left img {
+    max-width: 50%;
+  }
+  .studio {
+    padding: 0px 0;
+    overflow-x: hidden;
+  }
+  .studio-mbl {
+    margin-left: 0rem;
+    z-index: 999;
+    position: relative;
+  }
+  .studio-gif {
+    position: absolute;
+    top: 10%;
+    left: 9%;
+    height: 80%;
+    border-radius: 100%;
+    mix-blend-mode: difference;
+  }
+  .studio .studio-content .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1367px) {
+  .studio-gif {
+    position: absolute;
+    top: 5%;
+    left: -10%;
+    height: 87%;
+    border-radius: 50%;
+    mix-blend-mode: revert;
+  }
+  .mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile img {
+    max-width: 80%;
+  }
+}

@@ -1,0 +1,107 @@
+.footer {
+  background: var(--secondary);
+
+  padding: 0rem 3rem;
+}
+.footer .footer-content {
+  background: var(--hell);
+  display: flex;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+.footer .footer-log {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 0;
+}
+.footer .footer-log .logogif {
+  width: 259 px;
+  height: 91px;
+  mix-blend-mode: lighten;
+}
+/* .footer .footer-log h1 {
+  font-family: "Poppins";
+  letter-spacing: 1px;
+} */
+.footer .footer-log .blocknote {
+  width: 259px;
+  height: 91px;
+  mix-blend-mode: lighten;
+}
+.footer .footer-content .f-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer .footer-content .powered {
+  display: flex;
+  align-items: center;
+}
+.footer .footer-content .powered h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.7273px;
+  color: var(--heaven);
+  margin-right: 1rem;
+  overflow-y: hidden;
+}
+
+.copyright {
+  padding: 1.25rem 5rem;
+  background: var(--secondary);
+}
+.copyright-content .copy-detail,
+.copyright-content .copy-follow {
+  display: flex;
+  align-items: center;
+}
+.copyright p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--primary);
+}
+
+.copyright .copyright-content {
+  display: flex;
+  align-items: center;
+}
+.copyright .copy-follow {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 992px) {
+  .footer .f-left {
+    display: flex;
+
+    justify-content: center;
+  }
+  .f-right {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .copyright .copy-detail {
+    display: flex;
+    justify-content: center;
+  }
+  .copyright .copy-follow {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 1rem;
+  }
+  .footer .footer-content {
+    background: var(--hell);
+    display: flex;
+    align-items: center;
+    padding: 1rem 0rem;
+  }
+  .footer {
+    padding: 2rem 3rem;
+  }
+}

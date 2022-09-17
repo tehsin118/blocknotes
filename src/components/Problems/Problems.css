@@ -1,0 +1,52 @@
+.problems {
+  background: var(--hell);
+  padding: 75px 3rem 25px 3rem;
+  overflow-x: hidden;
+}
+
+.problems .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.problems .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
+}
+
+.problems .right img {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .problems {
+    overflow-x: hidden;
+    padding: 75px 1rem 25px 1rem;
+  }
+
+  .problems .left {
+    text-align: center;
+    order: 2;
+  }
+  .problems .right {
+    order: 1;
+  }
+}
+
+[data-aos="new-animation-tokken"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+[data-aos="new-animation-tokken"].aos-animate {
+  opacity: 1;
+}
+@media screen and (min-width: 1024px) {
+  [data-aos="new-animation-tokken"] {
+    transform: translateX(-300px);
+  }
+  [data-aos="new-animation-tokken"].aos-animate {
+    transform: translateX(0);
+  }
+}

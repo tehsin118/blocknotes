@@ -1,0 +1,64 @@
+.overviewhero {
+  background: #121212;
+}
+.overviewhero .overview-hero-content {
+  padding: 4rem 0 0 0;
+}
+.overviewhero .overview-hero-content h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  overflow-y: hidden;
+  animation: myAni 2s ease 1 normal forwards;
+}
+@keyframes myAni {
+  0% {
+    opacity: 0;
+    transform: rotate(-540deg) scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+}
+
+.overviewhero .overview-hero-content h1::-webkit-scrollbar {
+  display: none;
+}
+.overviewhero .logoggg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  overflow-x: hidden;
+  mix-blend-mode: difference;
+}
+
+.overviewhero .logoggg img {
+  height: 10rem;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .overviewhero .overview-hero-content h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .overviewhero .logoggg img {
+    height: 4rem !important;
+    margin-right: 1rem;
+  }
+}

@@ -1,0 +1,41 @@
+.solutions {
+  padding: 75px 0;
+  border-bottom: 10px solid
+    linear-gradient(84.89deg, #9945ff -24.69%, #14f195 146.43%);
+  background: var(--hell);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.solutions .solutions-content {
+  margin-top: 3.75rem;
+}
+
+.solutions .solutionCard {
+  padding: 1rem;
+  height: 20rem;
+  width: 21rem;
+  background-color: #070707;
+  transition: background-color 1s ease 0s;
+}
+
+.solutions .solutionCard:hover {
+  background-color: linear-gradient(84.89deg, #9945ff -24.69%, #14f195 146.43%);
+}
+
+.solo {
+  height: 1rem;
+  background: linear-gradient(84.89deg, #9945ff -24.69%, #14f195 146.43%);
+}
+
+@media screen and (max-width: 426px) {
+  .solutions {
+    overflow-x: hidden;
+    display: flex;
+  }
+  .solutions .c-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

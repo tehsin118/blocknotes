@@ -1,0 +1,62 @@
+.freq-questions {
+  background: var(--secondary);
+  padding: 120px 0;
+}
+
+.freq-questions .fq-content {
+  margin-top: 3.75rem;
+}
+.freq-questions .accordion {
+  border: none !important;
+  --bs-accordion-border-color: none !important;
+  --bs-accordion-btn-focus-border-color: none !important;
+  --bs-accordion-btn-focus-box-shadow: none !important;
+}
+.freq-questions .accordion-header {
+  background: var(--hell);
+  border-radius: 5px !important;
+}
+.freq-questions .accordion-button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 12px;
+  background-color: var(--hell);
+  color: var(--light) !important;
+  border: 1px solid var(--hell);
+}
+.accordion-button::after {
+  filter: invert(1);
+}
+.freq-questions .accordion-item {
+  background-color: var(--hell);
+  color: var(--light);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 426px) {
+  .freq-questions {
+    background: var(--secondary);
+    padding: 60px 0;
+  }
+  .freq-questions .fq-content {
+    margin-top: 3.75rem;
+    padding: 0rem 2rem;
+  }
+  .freq-questions .accordion-button {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: var(--hell);
+    color: var(--light) !important;
+    border: 1px solid var(--hell);
+  }
+}
